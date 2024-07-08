@@ -30,8 +30,7 @@ program bxl_2819343.aleo {
         return (remaining, transferred);
     }
 
-    function balance_of(owner_balance: Token) -> u64 {
-        // add your code here
-        return Token.amount;
+    transition balance_of(owner_balance: Token) -> u64 {
+        return owner_balance.amount;
     }
 }
